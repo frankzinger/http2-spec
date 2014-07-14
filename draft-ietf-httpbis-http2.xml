@@ -2226,7 +2226,7 @@ HTTP2-Settings    = token68
         </t>
         <t>
           There is an inherent race condition between an endpoint starting new streams and the
-          remote sending a GOAWAY frame.  To deal with this case, the GOAWAY contains the stream
+          remote peer sending a GOAWAY frame.  To deal with this case, the GOAWAY contains the stream
           identifier of the last peer-initiated stream which was or might be processed on the
           sending endpoint in this connection.  For instance, if the server sends a GOAWAY frame,
           the identifed stream is the highest numbered stream initiated by the client.
